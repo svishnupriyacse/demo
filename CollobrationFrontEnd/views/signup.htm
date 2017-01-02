@@ -1,0 +1,32 @@
+<div ng-controller="UserController as ctrl">
+<h1 style="align:center">Register</h1>
+<form id="register-form" ng-submit="ctrl.submit()" name="myform" role="form" style="margin:10px 100px 0px 100px" >
+  <div class="form-group">
+    <input type="hidden" name="user_id" id="user_id" tabindex="1" class="form-control" ng-model="ctrl.user.user_id" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <input type="text" name="username" id="username" tabindex="1" class="form-control" ng-model="ctrl.user.userName" placeholder="Username" value="">
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" id="email" tabindex="1" class="form-control" ng-model="ctrl.user.email_id" placeholder="Email Address" value="">
+  </div>
+  <div class="form-group">
+    <input type="checkbox" name="role" value="1" ng-model="ctrl.user.type_of_user"> Student
+    <input type="checkbox" name="role" value="2" ng-model="ctrl.user.type_of_user"> alumini
+    <input type="checkbox" name="role" value="3" ng-model="ctrl.user.type_of_user"> Employer
+  </div>
+  <div class="form-group">
+    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <input type="text" name="Phone_number" id="Phone_number" tabindex="2" class="form-control" placeholder="Phone_Number" ng-model="ctrl.user.phone_no">
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+      </div>
+    </div>
+  </div>
+</form>
+</div>

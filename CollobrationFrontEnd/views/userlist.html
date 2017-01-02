@@ -1,0 +1,24 @@
+<div>
+<h1>List of Users</h1>
+<table ng-controller="UserController as ctrl" border="2">
+  <tr>
+    <td>User id</td>
+    <td>User name</td>
+    <td>type of user</td>
+    <td>Email Id</td>
+    <td>Phone Number</td>
+    <td>password</td>
+    <td colspan="2">Actions</td>
+  </tr>
+  <tr>
+    <td>{{ctrl.user.user_id}}</td>
+    <td>{{ctrl.user.userName}}</td>
+    <td>{{ctrl.user.type_of_user}}</td>
+    <td>{{ctrl.user.email_id}}</td>
+    <td>{{ctrl.user.phone_no}}</td>
+    <td>{{ctrl.user.password}}</td>
+    <td ><a link="#">Edit</a></td>
+    <td><a link="#">delete</a></td>
+  </tr>
+</table>
+</div>
